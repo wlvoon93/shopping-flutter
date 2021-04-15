@@ -21,7 +21,15 @@ class DetailPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            ImageCarousel(),
+            ImageCarousel(
+              imageList: [
+                "https://thegreen.studio/ecommerce/default/upload/${shoeItem.Image}",
+                "https://thegreen.studio/ecommerce/default/upload/${shoeItem.Image1}",
+                "https://thegreen.studio/ecommerce/default/upload/${shoeItem.Image2}",
+                "https://thegreen.studio/ecommerce/default/upload/${shoeItem.Image3}",
+                "https://thegreen.studio/ecommerce/default/upload/${shoeItem.Image4}",
+              ],
+            ),
             Text(
               "${shoeItem.itemBrand} ${shoeItem.itemModel}",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
